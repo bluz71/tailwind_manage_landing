@@ -1,0 +1,13 @@
+# ~/.tmuxinator/tailwind_manage_landing.yml
+
+name: tailwind_manage_landing
+root: ~/projects/misc/tailwind_manage_landing
+windows:
+  - development:
+    - v
+  - watch: pnpm run watch
+  - live:
+    - cd ..
+    - live-server tailwind_manage_landing
+  - other:
+    - cd ~/dotfiles
